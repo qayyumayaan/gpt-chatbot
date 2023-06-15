@@ -2,12 +2,13 @@
   "name": "openai-quickstart-node",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://qayyumayaan.dev/gpt-chatbot",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "predeploy": "next build",
-    "deploy": "gh-pages -d .next"
+    "deploy": "next export && touch out/.nojekyll && gh-pages -d out"
   },
   "dependencies": {
     "gh-pages": "^5.0.0",
